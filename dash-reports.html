@@ -54,94 +54,96 @@
                         style="padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-main);">
                 </div>
 
-                <table class="dash-table">
-                    <thead>
-                        <tr>
-                            <th>Date Reported</th>
-                            <th>Report Name</th>
-                            <th>Cleaning Score</th>
-                            <th>Assigned Team</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mar 18, 2026</td>
-                            <td>Weekly Hygiene Summary</td>
-                            <td>98.5%</td>
-                            <td>Team Alpha</td>
-                            <td><span class="badge badge-success">Reviewed</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;"><i
-                                        class="ri-download-line"></i> PDF</button></td>
-                        </tr>
-                        <tr>
-                            <td>Mar 15, 2026</td>
-                            <td>Specialized Floor Care Log</td>
-                            <td>100.0%</td>
-                            <td>Deep Unit 1</td>
-                            <td><span class="badge badge-success">Reviewed</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;"><i
-                                        class="ri-download-line"></i> PDF</button></td>
-                        </tr>
-                        <tr>
-                            <td>Mar 11, 2026</td>
-                            <td>Monthly Facility Audit (Feb)</td>
-                            <td>97.8%</td>
-                            <td>HQ Audit Team</td>
-                            <td><span class="badge badge-warning">Awaiting Review</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;"><i
-                                        class="ri-download-line"></i> PDF</button></td>
-                        </tr>
-                        <tr>
-                            <td>Mar 04, 2026</td>
-                            <td>Quarterly Glass Maintenance</td>
-                            <td>N/A</td>
-                            <td>Exterior Group</td>
-                            <td><span class="badge badge-success">Reviewed</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;"><i
-                                        class="ri-download-line"></i> PDF</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-scroll" style="overflow-x: auto; width: 100%;">
+                    <table class="dash-table" style="min-width: 600px;">
+                        <thead>
+                            <tr>
+                                <th>Date Reported</th>
+                                <th>Report Name</th>
+                                <th>Cleaning Score</th>
+                                <th>Assigned Team</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mar 18, 2026</td>
+                                <td>Weekly Hygiene Summary</td>
+                                <td>98.5%</td>
+                                <td>Team Alpha</td>
+                                <td><span class="badge badge-success">Reviewed</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;"><i
+                                            class="ri-download-line"></i> PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td>Mar 15, 2026</td>
+                                <td>Specialized Floor Care Log</td>
+                                <td>100.0%</td>
+                                <td>Deep Unit 1</td>
+                                <td><span class="badge badge-success">Reviewed</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;"><i
+                                            class="ri-download-line"></i> PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td>Mar 11, 2026</td>
+                                <td>Monthly Facility Audit (Feb)</td>
+                                <td>97.8%</td>
+                                <td>HQ Audit Team</td>
+                                <td><span class="badge badge-warning">Awaiting Review</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;"><i
+                                            class="ri-download-line"></i> PDF</button></td>
+                            </tr>
+                            <tr>
+                                <td>Mar 04, 2026</td>
+                                <td>Quarterly Glass Maintenance</td>
+                                <td>N/A</td>
+                                <td>Exterior Group</td>
+                                <td><span class="badge badge-success">Reviewed</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;"><i
+                                            class="ri-download-line"></i> PDF</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Report Highlight Section -->
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-                <div class="dash-card">
-                    <h3>Latest Audit Summary</h3>
-                    <div style="margin-top: 20px;">
-                        <div style="display:flex; justify-content:space-between; margin-bottom: 10px;">
-                            <p style="font-size: 0.9rem;">Desk Sanitization</p>
-                            <p style="font-weight: 700;">100%</p>
-                        </div>
-                        <div
-                            style="width:100%; height:8px; background: rgba(16, 185, 129, 0.1); border-radius: 4px; margin-bottom: 20px;">
-                            <div style="width:100%; height:100%; background: var(--secondary); border-radius: 4px;">
-                            </div>
-                        </div>
-
-                        <div style="display:flex; justify-content:space-between; margin-bottom: 10px;">
-                            <p style="font-size: 0.9rem;">High-Touch Areas</p>
-                            <p style="font-weight: 700;">96%</p>
-                        </div>
-                        <div
-                            style="width:100%; height:8px; background: rgba(16, 185, 129, 0.1); border-radius: 4px; margin-bottom: 20px;">
-                            <div style="width:96%; height:100%; background: var(--secondary); border-radius: 4px;">
-                            </div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 30px;" class="reports-bottom-grid"></div>
+            <div class="dash-card">
+                <h3 style="text-align: center;">Latest Audit Summary</h3>
+                <div style="margin-top: 20px;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom: 10px;">
+                        <p style="font-size: 0.9rem;">Desk Sanitization</p>
+                        <p style="font-weight: 700;">100%</p>
+                    </div>
+                    <div
+                        style="width:100%; height:8px; background: rgba(16, 185, 129, 0.1); border-radius: 4px; margin-bottom: 20px;">
+                        <div style="width:100%; height:100%; background: var(--secondary); border-radius: 4px;">
                         </div>
                     </div>
-                </div>
-                <div class="dash-card" style="display:flex; align-items:center; gap: 20px;">
-                    <i class="ri-shield-sparkline-line" style="font-size: 4rem; color: var(--accent); opacity:0.3;"></i>
-                    <div>
-                        <h3>Certificate of Compliance</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-secondary);">Your facility is currently 100%
-                            compliant with ISO 14001:2015 environmental standards.</p>
+
+                    <div style="display:flex; justify-content:space-between; margin-bottom: 10px;">
+                        <p style="font-size: 0.9rem;">High-Touch Areas</p>
+                        <p style="font-weight: 700;">96%</p>
+                    </div>
+                    <div
+                        style="width:100%; height:8px; background: rgba(16, 185, 129, 0.1); border-radius: 4px; margin-bottom: 20px;">
+                        <div style="width:96%; height:100%; background: var(--secondary); border-radius: 4px;">
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
+            <div class="dash-card" style="display:flex; align-items:center; gap: 20px;">
+                <i class="ri-shield-sparkline-line" style="font-size: 4rem; color: var(--accent); opacity:0.3;"></i>
+                <div>
+                    <h3 style="text-align: center;">Certificate of Compliance</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Your facility is currently 100%
+                        compliant with ISO 14001:2015 environmental standards.</p>
+                </div>
+            </div>
+    </div>
+    </main>
     </div>
 
     <script src="assets/js/dashboard.js"></script>

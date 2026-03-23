@@ -589,3 +589,17 @@ button {
     color: var(--text-primary) !important;
     border-color: var(--border-color) !important;
 }
+
+[data-theme="dark"] input[type="month"] {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] input[type="month"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .dash-hamburger {
+    color: var(--text-primary);
+}

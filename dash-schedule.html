@@ -51,81 +51,85 @@
 
             <!-- Schedule Card -->
             <div class="dash-card">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px;">
-                    <h3>Upcoming Appointments</h3>
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px; gap: 20px; flex-wrap: wrap;">
+                    <h3 style="white-space: nowrap;">Upcoming Appointments</h3>
                     <div style="display:flex; gap: 10px;">
                         <button class="btn btn-outline" style="padding: 10px 15px; font-size: 0.8rem;"><i
-                                class="ri-download-line"></i> Export ICS</button>
+                                class="ri-download-line"></i> Export</button>
                         <button class="btn btn-primary"
                             style="padding: 10px 15px; font-size: 0.8rem; background-color: var(--secondary);">Request
                             Schedule Change</button>
                     </div>
                 </div>
 
-                <table class="dash-table">
-                    <thead>
-                        <tr>
-                            <th>Date & Time</th>
-                            <th>Service Type</th>
-                            <th>Assigned Team</th>
-                            <th>Facility Area</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <p style="font-weight: 700;">Mar 23, 2026</p>
-                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
-                            </td>
-                            <td>Standard Janitorial</td>
-                            <td>Team Alpha</td>
-                            <td>Full HQ Facility</td>
-                            <td><span class="badge badge-success">Scheduled</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p style="font-weight: 700;">Mar 25, 2026</p>
-                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
-                            </td>
-                            <td>Floor Polishing</td>
-                            <td>Specialized Unit</td>
-                            <td>Lobby & Ground Floor</td>
-                            <td><span class="badge badge-success">Scheduled</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p style="font-weight: 700;">Mar 27, 2026</p>
-                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
-                            </td>
-                            <td>Window Washing</td>
-                            <td>Team Exterior</td>
-                            <td>All Glass Surfaces</td>
-                            <td><span class="badge badge-warning">Pending Approval</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;">Approve</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p style="font-weight: 700;">Mar 30, 2026</p>
-                                <p style="font-size: 0.8rem; color: var(--text-secondary);">11:00 PM — 04:00 AM</p>
-                            </td>
-                            <td>Monthly Deep Clean</td>
-                            <td>Mixed Rotation</td>
-                            <td>Full HQ Facility</td>
-                            <td><span class="badge badge-success">Scheduled</span></td>
-                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-scroll" style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%;">
+                    <table class="dash-table" style="min-width: 600px;">
+                        <thead>
+                            <tr>
+                                <th>Date & Time</th>
+                                <th>Service Type</th>
+                                <th>Assigned Team</th>
+                                <th>Facility Area</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p style="font-weight: 700;">Mar 23, 2026</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                                </td>
+                                <td>Standard Janitorial</td>
+                                <td>Team Alpha</td>
+                                <td>Full HQ Facility</td>
+                                <td><span class="badge badge-success">Scheduled</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-weight: 700;">Mar 25, 2026</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                                </td>
+                                <td>Floor Polishing</td>
+                                <td>Specialized Unit</td>
+                                <td>Lobby & Ground Floor</td>
+                                <td><span class="badge badge-success">Scheduled</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-weight: 700;">Mar 27, 2026</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                                </td>
+                                <td>Window Washing</td>
+                                <td>Team Exterior</td>
+                                <td>All Glass Surfaces</td>
+                                <td><span class="badge badge-warning">Pending Approval</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;">Approve</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-weight: 700;">Mar 30, 2026</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary);">11:00 PM — 04:00 AM</p>
+                                </td>
+                                <td>Monthly Deep Clean</td>
+                                <td>Mixed Rotation</td>
+                                <td>Full HQ Facility</td>
+                                <td><span class="badge badge-success">Scheduled</span></td>
+                                <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Calendar Sidebar View (Visual) -->
             <div class="dash-card">
                 <h3>Recent Operational Notes</h3>
-                <p style="color: var(--text-secondary); margin-top: 10px; font-size: 0.9rem;">"Please ensure elevator
+                <p style="color: var(--text-secondary); margin-top: 10px; font-size: 0.9rem;">"Please ensure
+                    elevator
                     lobby access is cleared for floor polishing on Friday night." — Admin Team</p>
             </div>
         </main>
