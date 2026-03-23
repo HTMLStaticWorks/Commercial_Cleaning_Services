@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Overview | CleanEdge Pro Portal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body data-theme="light">
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item active"><i class="ri-dashboard-3-line"></i> Overview</a>
+                <a href="dash-schedule.html" class="menu-item"><i class="ri-calendar-event-line"></i> Schedule</a>
+                <a href="dash-reports.html" class="menu-item"><i class="ri-article-line"></i> Reports</a>
+                <a href="dash-invoices.html" class="menu-item"><i class="ri-bill-line"></i> Invoices</a>
+                <a href="dash-messages.html" class="menu-item"><i class="ri-chat-3-line"></i> Messages</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="menu-item" style="color:#ef4444;"><i class="ri-logout-box-line"></i>
+                    Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-dashboard">
+            <header class="dash-header">
+                <div style="display:flex; align-items:center; gap: 20px;">
+                    <button class="dash-hamburger" id="dash-toggle"><i class="ri-menu-2-line"></i></button>
+                    <div>
+                        <h1 style="font-size: 1.5rem;">Good morning, Marcus</h1>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Nexus Corp • HQ Facility Manager</p>
+                    </div>
+                </div>
+
+                <div class="user-profile">
+                    <button id="theme-toggle" class="theme-toggle" style="width:36px; height:36px;"><i
+                            class="ri-moon-line"></i></button>
+                    <div style="text-align: right;" class="d-none-mobile">
+                        <p style="font-weight:700; font-size: 0.8rem;">Marcus Thorne</p>
+                        <p style="font-size: 0.7rem; color: var(--text-secondary);">Premium Plan</p>
+                    </div>
+                    <img src="https://i.pravatar.cc/100?u=1" alt="Profile">
+                </div>
+            </header>
+
+            <!-- Overview Section -->
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Next Cleaning
+                        </p>
+                        <h3 style="font-size: 1.5rem;">Tomorrow, 10 PM</h3>
+                        <p style="color: var(--secondary); font-size: 0.75rem; font-weight: 700;">CONFIRMED</p>
+                    </div>
+                    <i class="ri-time-line"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Unread Reports
+                        </p>
+                        <h3 style="font-size: 1.5rem;">03</h3>
+                        <p style="color: var(--accent); font-size: 0.75rem; font-weight: 700;">VIEW ALL</p>
+                    </div>
+                    <i class="ri-file-search-line"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Monthly Billing
+                        </p>
+                        <h3 style="font-size: 1.5rem;">$2,450.00</h3>
+                        <p style="color: #ef4444; font-size: 0.75rem; font-weight: 700;">OVERDUE</p>
+                    </div>
+                    <i class="ri-wallet-3-line"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Hygiene Score
+                        </p>
+                        <h3 style="font-size: 1.5rem;">98.2%</h3>
+                        <p style="color: var(--secondary); font-size: 0.75rem; font-weight: 700;">EXCELLENT</p>
+                    </div>
+                    <i class="ri-checkbox-circle-line"></i>
+                </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns: 2fr 1fr; gap: 30px;" class="dash-bottom-grid">
+                <!-- Recent Activity -->
+                <div class="dash-card">
+                    <h3 style="margin-bottom: 25px;">Recent Activity</h3>
+                    <div style="display:grid; gap: 20px;">
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <div
+                                style="background: rgba(16, 185, 129, 0.1); color: var(--secondary); width: 44px; height: 44px; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <div style="flex-grow:1;">
+                                <h4 style="font-size: 0.95rem;">Full Facility Cleansed</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">Deep clean completed on
+                                    Floors 3-8 by Team Alpha.</p>
+                            </div>
+                            <p style="font-size: 0.75rem; color: var(--text-secondary);">2h ago</p>
+                        </div>
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <div
+                                style="background: rgba(245, 158, 11, 0.1); color: var(--accent); width: 44px; height: 44px; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-file-line"></i>
+                            </div>
+                            <div style="flex-grow:1;">
+                                <h4 style="font-size: 0.95rem;">New Report Uploaded</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">Hygiene audit report for
+                                    Week 11 is now available.</p>
+                            </div>
+                            <p style="font-size: 0.75rem; color: var(--text-secondary);">Yesterday</p>
+                        </div>
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <div
+                                style="background: rgba(15, 23, 42, 0.1); color: var(--primary-900); width: 44px; height: 44px; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-message-3-line"></i>
+                            </div>
+                            <div style="flex-grow:1;">
+                                <h4 style="font-size: 0.95rem;">New Message</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">Team Lead Jessica: "Resupply
+                                    of sanitizers completed."</p>
+                            </div>
+                            <p style="font-size: 0.75rem; color: var(--text-secondary);">2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan Info -->
+                <div class="dash-card">
+                    <h3 style="margin-bottom: 25px;">Current Plan</h3>
+                    <div
+                        style="background: var(--primary-900); color:#fff; padding: 25px; border-radius: 16px; margin-bottom: 20px;">
+                        <p style="font-size: 0.8rem; text-transform:uppercase; margin-bottom: 15px; opacity:0.8;">
+                            Premium Enterprise</p>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Corporate XL</h2>
+                        <ul style="font-size: 0.85rem; margin-bottom: 20px; display:grid; gap: 10px;">
+                            <li>• Daily Night Cleaning</li>
+                            <li>• Bi-weekly Window Washing</li>
+                            <li>• Dedicated Team Lead</li>
+                            <li>• 24/7 Priority Support</li>
+                        </ul>
+                        <button class="btn btn-primary"
+                            style="background:#fff; color:var(--primary-900); width:100%; justify-content:center; font-size: 0.8rem;">Upgrade
+                            Plan</button>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary);">Next Billing Date</p>
+                        <p style="font-weight: 700;">April 01, 2026</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/script.js"></script>
+    <style>
+        @media (max-width: 768px) {
+            .main-dashboard[style*="grid-template-columns: 2fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

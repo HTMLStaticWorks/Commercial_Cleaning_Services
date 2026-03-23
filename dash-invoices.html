@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Invoices | CleanEdge Pro Portal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body data-theme="light">
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item"><i class="ri-dashboard-3-line"></i> Overview</a>
+                <a href="dash-schedule.html" class="menu-item"><i class="ri-calendar-event-line"></i> Schedule</a>
+                <a href="dash-reports.html" class="menu-item"><i class="ri-article-line"></i> Reports</a>
+                <a href="dash-invoices.html" class="menu-item active"><i class="ri-bill-line"></i> Invoices</a>
+                <a href="dash-messages.html" class="menu-item"><i class="ri-chat-3-line"></i> Messages</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="login.html" class="menu-item" style="color:#ef4444;"><i class="ri-logout-box-line"></i>
+                    Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-dashboard">
+            <header class="dash-header">
+                <div style="display:flex; align-items:center; gap: 20px;">
+                    <button class="dash-hamburger" id="dash-toggle"><i class="ri-menu-2-line"></i></button>
+                    <div>
+                        <h1 style="font-size: 1.5rem;">Billing & Payments</h1>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Manage your facility maintenance
+                            subscriptions and history.</p>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <button id="theme-toggle" class="theme-toggle" style="width:36px; height:36px;"><i
+                            class="ri-moon-line"></i></button>
+                    <img src="https://i.pravatar.cc/100?u=1" alt="Profile">
+                </div>
+            </header>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Total Owed</p>
+                        <h3 style="font-size: 1.5rem;">$2,450.00</h3>
+                        <p style="color: #ef4444; font-size: 0.75rem; font-weight: 700;">IN DUE - 5 DAYS OVER</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Estimated Next
+                            Charge</p>
+                        <h3 style="font-size: 1.5rem;">$2,450.00</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.75rem; font-weight: 700;">APRIL 01, 2026
+                        </p>
+                    </div>
+                </div>
+                <div class="stat-card" style="grid-column: span 1.5;">
+                    <div>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px;">Preferred
+                            Payment Method</p>
+                        <h3 style="font-size: 1.5rem;">Visa **** 4452</h3>
+                        <p style="color: var(--secondary); font-size: 0.75rem; font-weight: 700;">DEFAULT ACCOUNT</p>
+                    </div>
+                    <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">Change
+                        Method</button>
+                </div>
+            </div>
+
+            <div class="dash-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px;">
+                    <h3>Invoice History</h3>
+                </div>
+
+                <table class="dash-table">
+                    <thead>
+                        <tr>
+                            <th>Invoice ID</th>
+                            <th>Billing Period</th>
+                            <th>Total Amount</th>
+                            <th>Date Issued</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight:700;">CEP-#02450</td>
+                            <td>Feb 01 — Feb 28, 2026</td>
+                            <td>$2,450.00</td>
+                            <td>Mar 01, 2026</td>
+                            <td><span class="badge badge-danger">Unpaid</span></td>
+                            <td><button class="btn btn-secondary" style="padding: 8px 15px; font-size: 0.8rem;">Pay
+                                    Now</button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">CEP-#02380</td>
+                            <td>Jan 01 — Jan 31, 2026</td>
+                            <td>$2,450.00</td>
+                            <td>Feb 01, 2026</td>
+                            <td><span class="badge badge-success">Paid</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;"><i
+                                        class="ri-printer-line"></i> Receipt</button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">CEP-#02210</td>
+                            <td>Dec 01 — Dec 31, 2025</td>
+                            <td>$2,450.00</td>
+                            <td>Jan 01, 2026</td>
+                            <td><span class="badge badge-success">Paid</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;"><i
+                                        class="ri-printer-line"></i> Receipt</button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">CEP-#02100</td>
+                            <td>Nov 01 — Nov 30, 2025</td>
+                            <td>$2,100.00</td>
+                            <td>Dec 01, 2025</td>
+                            <td><span class="badge badge-success">Paid</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;"><i
+                                        class="ri-printer-line"></i> Receipt</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

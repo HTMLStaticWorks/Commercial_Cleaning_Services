@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Schedule | CleanEdge Pro Portal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body data-theme="light">
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item"><i class="ri-dashboard-3-line"></i> Overview</a>
+                <a href="dash-schedule.html" class="menu-item active"><i class="ri-calendar-event-line"></i>
+                    Schedule</a>
+                <a href="dash-reports.html" class="menu-item"><i class="ri-article-line"></i> Reports</a>
+                <a href="dash-invoices.html" class="menu-item"><i class="ri-bill-line"></i> Invoices</a>
+                <a href="dash-messages.html" class="menu-item"><i class="ri-chat-3-line"></i> Messages</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="menu-item" style="color:#ef4444;"><i class="ri-logout-box-line"></i>
+                    Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-dashboard">
+            <header class="dash-header">
+                <div style="display:flex; align-items:center; gap: 20px;">
+                    <button class="dash-hamburger" id="dash-toggle"><i class="ri-menu-2-line"></i></button>
+                    <div>
+                        <h1 style="font-size: 1.5rem;">Cleaning Operations</h1>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">View your upcoming service
+                            appointments and assigned teams.</p>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <button id="theme-toggle" class="theme-toggle" style="width:36px; height:36px;"><i
+                            class="ri-moon-line"></i></button>
+                    <img src="https://i.pravatar.cc/100?u=1" alt="Profile">
+                </div>
+            </header>
+
+            <!-- Schedule Card -->
+            <div class="dash-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px;">
+                    <h3>Upcoming Appointments</h3>
+                    <div style="display:flex; gap: 10px;">
+                        <button class="btn btn-outline" style="padding: 10px 15px; font-size: 0.8rem;"><i
+                                class="ri-download-line"></i> Export ICS</button>
+                        <button class="btn btn-primary"
+                            style="padding: 10px 15px; font-size: 0.8rem; background-color: var(--secondary);">Request
+                            Schedule Change</button>
+                    </div>
+                </div>
+
+                <table class="dash-table">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Service Type</th>
+                            <th>Assigned Team</th>
+                            <th>Facility Area</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p style="font-weight: 700;">Mar 23, 2026</p>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                            </td>
+                            <td>Standard Janitorial</td>
+                            <td>Team Alpha</td>
+                            <td>Full HQ Facility</td>
+                            <td><span class="badge badge-success">Scheduled</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-weight: 700;">Mar 25, 2026</p>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                            </td>
+                            <td>Floor Polishing</td>
+                            <td>Specialized Unit</td>
+                            <td>Lobby & Ground Floor</td>
+                            <td><span class="badge badge-success">Scheduled</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-weight: 700;">Mar 27, 2026</p>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">10:00 PM — 02:00 AM</p>
+                            </td>
+                            <td>Window Washing</td>
+                            <td>Team Exterior</td>
+                            <td>All Glass Surfaces</td>
+                            <td><span class="badge badge-warning">Pending Approval</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;">Approve</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-weight: 700;">Mar 30, 2026</p>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">11:00 PM — 04:00 AM</p>
+                            </td>
+                            <td>Monthly Deep Clean</td>
+                            <td>Mixed Rotation</td>
+                            <td>Full HQ Facility</td>
+                            <td><span class="badge badge-success">Scheduled</span></td>
+                            <td><button style="color: var(--secondary); font-weight:700;">View Details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Calendar Sidebar View (Visual) -->
+            <div class="dash-card">
+                <h3>Recent Operational Notes</h3>
+                <p style="color: var(--text-secondary); margin-top: 10px; font-size: 0.9rem;">"Please ensure elevator
+                    lobby access is cleared for floor polishing on Friday night." — Admin Team</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

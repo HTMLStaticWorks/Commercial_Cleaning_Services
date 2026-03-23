@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | CleanEdge Pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
+                <a href="login.html" class="btn btn-primary d-none-mobile">Login</a>
+                <button class="hamburger"><i class="ri-menu-3-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <a href="index.html" class="logo" style="font-size:1.2rem;">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <button id="close-drawer"><i class="ri-close-line" style="font-size:2rem;"></i></button>
+        </div>
+        <div class="mobile-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="home2.html" class="mobile-link">Home 2</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="dashboard.html" class="mobile-link">Dashboard</a>
+            <a href="login.html" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+    <!-- Services Banner -->
+    <section class="section"
+        style="padding-top:160px; background-color: var(--primary-900); color: #fff; text-align: center;">
+        <div class="container reveal">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Elite Cleaning Solutions</h1>
+            <p style="opacity: 0.8; max-width: 700px; margin: 0 auto;">We offer comprehensive building maintenance
+                tailored to your facility's unique operational requirements.</p>
+        </div>
+    </section>
+
+    <!-- Main Service Grid -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;" class="service-cards">
+                <!-- Card 1 -->
+                <div class="card reveal" style="padding: 0; overflow: hidden; height: 100%; border:none;">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                        alt="Office Cleaning" style="width:100%; height:250px; object-fit:cover;">
+                    <div
+                        style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
+                        <h3 style="margin-bottom: 15px;">Corporate Office Cleaning</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Daily, nightly, or weekly
+                            rotations desk sanitization, restroom hygiene, and kitchen area cleaning.</p>
+                        <ul
+                            style="margin-bottom: 25px; display: grid; gap: 10px; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> High-Touch Sanitization
+                            </li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Desktop Disinfection</li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Waste Management &
+                                Recycling</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get
+                            Details</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card reveal" style="padding: 0; overflow: hidden; height: 100%; border:none;">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800"
+                        alt="Retail" style="width:100%; height:250px; object-fit:cover;">
+                    <div
+                        style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
+                        <h3 style="margin-bottom: 15px;">Retail & Showroom Care</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Protecting your brand image with
+                            pristine glass, reflective floors, and spotless fitting environments.</p>
+                        <ul
+                            style="margin-bottom: 25px; display: grid; gap: 10px; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Floor Buffing & Polishing
+                            </li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Glass & Mirrored Surface
+                                Cleaning</li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Carpet Deep Extraction
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get
+                            Details</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card reveal" style="padding: 0; overflow: hidden; height: 100%; border:none;">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=80&w=800"
+                        alt="Specialized" style="width:100%; height:250px; object-fit:cover;">
+                    <div
+                        style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
+                        <h3 style="margin-bottom: 15px;">Industrial & Deep Clean</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Specialized heavy-duty protocols
+                            for warehouses, medical centers, and post-construction projects.</p>
+                        <ul
+                            style="margin-bottom: 25px; display: grid; gap: 10px; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> HEPA Air Purification</li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Degreasing & Pressure
+                                Washing</li>
+                            <li><i class="ri-check-line" style="color:var(--secondary);"></i> Biohazard Level Sanitation
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get
+                            Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cleaning Process -->
+    <section class="section" style="background-color: var(--bg-card);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Methodology</h2>
+                <p>Standardized workflows that guarantee consistent quality across every visit.</p>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+                <div class="reveal">
+                    <div style="width:60px; height:60px; background:var(--secondary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-weight:700;"">
+                        1</div>
+                    <h4 style=" margin-bottom:10px;">Audit</h4>
+                        <p style="font-size:0.9rem; color:var(--text-secondary);">On-site facility assessment and safety
+                            evaluation.</p>
+                    </div>
+                    <div class="reveal">
+                        <div style="width:60px; height:60px; background:var(--secondary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-weight:700;"">
+                        2</div>
+                    <h4 style=" margin-bottom:10px;">Strategy</h4>
+                            <p style="font-size:0.9rem; color:var(--text-secondary);">Custom cleaning plan with
+                                designated
+                                frequency & tools.</p>
+                        </div>
+                        <div class="reveal">
+                            <div
+                                style="width:60px; height:60px; background:var(--secondary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-weight:700;">
+                                3</div>
+                            <h4 style="margin-bottom:10px;">Execution</h4>
+                            <p style="font-size:0.9rem; color:var(--text-secondary);">Certified staff performing
+                                according
+                                to
+                                ISO standards.</p>
+                        </div>
+                        <div class="reveal">
+                            <div
+                                style="width:60px; height:60px; background:var(--accent); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-weight:700;">
+                                4</div>
+                            <h4 style="margin-bottom:10px;">Reporting</h4>
+                            <p style="font-size:0.9rem; color:var(--text-secondary);">Direct digital reports uploaded to
+                                your
+                                Client Portal.</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <div class="reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: 24px;">Need a Tailored Quote?</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px;">Tell us about your
+                    space, and we'll build a custom service package that fits your budget and hygiene goals.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Contact Sales Representative</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+                    </a>
+                    <p style="margin-bottom: 24px;">Elevating hygiene standards for the modern corporate world since
+                        2005.</p>
+                    <div style="display:flex; gap: 15px;">
+                        <a href="#" class="social-icon"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links" style="font-size: 0.9rem;">
+                        <li><i class="ri-map-pin-line"></i> 101 Corporate Plaza, NY</li>
+                        <li><i class="ri-phone-line"></i> +1 (800) CLEAN-PRO</li>
+                        <li><i class="ri-mail-line"></i> hello@cleanedge.pro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 16px;">Get hygiene insights and updates straight to your
+                        inbox.</p>
+                    <div style="display:flex; flex-direction:column; gap: 10px;">
+                        <input type="email" placeholder="Your email address" style="
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(255,255,255,0.1);
+                        background: rgba(255,255,255,0.05);
+                        color: #fff;
+                        font-family: inherit;
+                        font-size: 0.9rem;
+                        outline: none;
+                        width: 100%;
+                    ">
+                        <button class="btn btn-secondary" style="width:100%; justify-content:center;">
+                            Subscribe <i class="ri-send-plane-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CleanEdge Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

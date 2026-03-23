@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our Facilities Team | CleanEdge Pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
+                <a href="login.html" class="btn btn-primary d-none-mobile">Login</a>
+                <button class="hamburger"><i class="ri-menu-3-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <a href="index.html" class="logo" style="font-size:1.2rem;">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <button id="close-drawer"><i class="ri-close-line" style="font-size:2rem;"></i></button>
+        </div>
+        <div class="mobile-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="home2.html" class="mobile-link">Home 2</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="dashboard.html" class="mobile-link">Dashboard</a>
+            <a href="login.html" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+
+    <!-- Contact Header -->
+    <section class="section"
+        style="padding-top:160px; background-color: var(--primary-900); color: #fff; text-align: center;">
+        <div class="container reveal">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Let's Transform Your Workspace</h1>
+            <p style="opacity: 0.8; max-width: 700px; margin: 0 auto;">Connect with our facility management experts for
+                a customized commercial cleaning proposal.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="section">
+        <div class="container contact-layout"
+            style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start;">
+            <!-- Contact Form -->
+            <div class="reveal">
+                <div class="card" style="padding: 40px; border-radius: 20px;">
+                    <h3 style="margin-bottom: 30px;">Request a Custom Proposal</h3>
+                    <form id="contact-form" style="display:grid; gap: 20px;">
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div>
+                                <label
+                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Full
+                                    Name</label>
+                                <input type="text" required placeholder="John Doe"
+                                    style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                            </div>
+                            <div>
+                                <label
+                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Company
+                                    Name</label>
+                                <input type="text" required placeholder="Acme Inc"
+                                    style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Service
+                                Needed</label>
+                            <select
+                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                                <option>Corporate Office Cleaning</option>
+                                <option>Retail & Showroom Care</option>
+                                <option>Industrial Specialization</option>
+                                <option>Deep Clean Audit</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label
+                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Official
+                                Email</label>
+                            <input type="email" required placeholder="j.doe@company.com"
+                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                        </div>
+                        <div>
+                            <label
+                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Your
+                                Message</label>
+                            <textarea rows="5"
+                                placeholder="Tell us about your facility size and specific requirements..."
+                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none; font-family:inherit;"></textarea>
+                        </div>
+                        <button class="btn btn-primary"
+                            style="padding: 18px; width:100%; justify-content:center;">Submit Proposal Request <i
+                                class="ri-send-plane-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="reveal">
+                <div style="margin-bottom: 40px; text-align: center;">
+                    <h3 style="margin-bottom: 24px;">Global Headquarters</h3>
+                    <div style="display:grid; gap: 24px;">
+                        <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                            <div
+                                style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Location</h4>
+                                <p style="color: var(--text-secondary);">101 Corporate Plaza, 5th Avenue, New York, NY
+                                    10001</p>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                            <div
+                                style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Direct Sales</h4>
+                                <p style="color: var(--text-secondary);">+1 (8005555) 253-2677 77| Mon-Fri, 9am - 6pm
+                                    EST
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                            <div
+                                style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Inquiries</h4>
+                                <p style="color: var(--text-secondary);">proposals@cleanedge.pro | support@cleanedge.pro
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div style="background: var(--bg-card); border-radius: 20px; border: 1px solid var(--border-color); overflow:hidden; height: 350px;"
+                    class="reveal">
+                    <div
+                        style="width:100%; height:100%; background: linear-gradient(135deg, var(--bg-main) 0%, var(--border-color) 100%); display:flex; align-items:center; justify-content:center; text-align:center; padding: 40px;">
+                        <div>
+                            <i class="ri-map-pin-2-fill"
+                                style="font-size: 3rem; color: var(--accent); margin-bottom: 20px; display:block;"></i>
+                            <h3>Integrated Map Interface</h3>
+                            <p style="color: var(--text-secondary);">Our service area covers most of continental US &
+                                select European regions.</p>
+                            <div style="width:100px; height:2px; background: var(--secondary); margin: 20px auto;">
+                            </div>
+                            <p style="font-size: 0.8rem; font-weight:700;">OFFICE IDENTIFIED: 40.7128° N, 74.0060° W</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 30px; text-align: center;">
+            <h4
+                style="margin-bottom: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-secondary);">
+                Follow Us</h4>
+            <div style="display:flex; gap: 15px; justify-content: center;">
+                <a href="#" class="social-icon"
+                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                        class="ri-linkedin-box-fill"></i></a>
+                <a href="#" class="social-icon"
+                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                        class="ri-facebook-box-fill"></i></a>
+                <a href="#" class="social-icon"
+                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                        class="ri-twitter-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+                    </a>
+                    <p style="margin-bottom: 24px;">Elevating hygiene standards for the modern corporate world since
+                        2005.</p>
+                    <div style="display:flex; gap: 15px;">
+                        <a href="#" class="social-icon"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links" style="font-size: 0.9rem;">
+                        <li><i class="ri-map-pin-line"></i> 101 Corporate Plaza, NY</li>
+                        <li><i class="ri-phone-line"></i> +1 (800) CLEAN-PRO</li>
+                        <li><i class="ri-mail-line"></i> hello@cleanedge.pro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 16px;">Get hygiene insights and updates straight to your
+                        inbox.</p>
+                    <div style="display:flex; flex-direction:column; gap: 10px;">
+                        <input type="email" placeholder="Your email address" style="
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(255,255,255,0.1);
+                        background: rgba(255,255,255,0.05);
+                        color: #fff;
+                        font-family: inherit;
+                        font-size: 0.9rem;
+                        outline: none;
+                        width: 100%;
+                    ">
+                        <button class="btn btn-secondary" style="width:100%; justify-content:center;">
+                            Subscribe <i class="ri-send-plane-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CleanEdge Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <style>
+        @media (max-width: 768px) {
+            .section[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

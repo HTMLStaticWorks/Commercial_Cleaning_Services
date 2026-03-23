@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Communications | CleanEdge Pro Portal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <style>
+        .chat-container {
+            display: flex;
+            height: calc(100vh - 160px);
+            background: var(--bg-card);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .chat-sidebar {
+            width: 300px;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-contact {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .chat-contact:hover,
+        .chat-contact.active {
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        .chat-body {
+            flex-grow: 1;
+            padding: 30px;
+            overflow-y: auto;
+            background: var(--bg-main);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 15px 20px;
+            border-radius: 16px;
+            font-size: 0.95rem;
+        }
+
+        .message-sent {
+            align-self: flex-end;
+            background: var(--primary-900);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message-received {
+            align-self: flex-start;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-input-area {
+            padding: 20px;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 15px;
+        }
+
+        .chat-input {
+            flex-grow: 1;
+            background: var(--bg-main);
+            border: 1px solid var(--border-color);
+            padding: 12px 20px;
+            border-radius: 12px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body data-theme="light">
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-logo">
+                <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
+            </a>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item"><i class="ri-dashboard-3-line"></i> Overview</a>
+                <a href="dash-schedule.html" class="menu-item"><i class="ri-calendar-event-line"></i> Schedule</a>
+                <a href="dash-reports.html" class="menu-item"><i class="ri-article-line"></i> Reports</a>
+                <a href="dash-invoices.html" class="menu-item"><i class="ri-bill-line"></i> Invoices</a>
+                <a href="dash-messages.html" class="menu-item active"><i class="ri-chat-3-line"></i> Messages</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="menu-item" style="color:#ef4444;"><i class="ri-logout-box-line"></i>
+                    Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-dashboard">
+            <header class="dash-header">
+                <div style="display:flex; align-items:center; gap: 20px;">
+                    <button class="dash-hamburger" id="dash-toggle"><i class="ri-menu-2-line"></i></button>
+                    <div>
+                        <h1 style="font-size: 1.5rem;">Direct Messaging</h1>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Chat with your assigned cleaning
+                            leads and account managers.</p>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <button id="theme-toggle" class="theme-toggle" style="width:36px; height:36px;"><i
+                            class="ri-moon-line"></i></button>
+                    <img src="https://i.pravatar.cc/100?u=1" alt="Profile">
+                </div>
+            </header>
+
+            <div class="chat-container">
+                <!-- Chat Sidebar -->
+                <div class="chat-sidebar">
+                    <div style="padding: 20px; border-bottom: 1px solid var(--border-color);">
+                        <h3 style="font-size: 1rem;">Direct Contacts</h3>
+                    </div>
+                    <div class="chat-contact active">
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <img src="https://i.pravatar.cc/100?u=5" style="width:40px; height:40px; border-radius:50%;"
+                                alt="User">
+                            <div>
+                                <h4 style="font-size: 0.9rem;">Team Lead Jessica</h4>
+                                <p style="font-size: 0.75rem; color: var(--secondary);">Online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-contact">
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <img src="https://i.pravatar.cc/100?u=6" style="width:40px; height:40px; border-radius:50%;"
+                                alt="User">
+                            <div>
+                                <h4 style="font-size: 0.9rem;">Account Manager Sam</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-secondary);">Offline</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-contact">
+                        <div style="display:flex; gap: 15px; align-items:center;">
+                            <img src="https://i.pravatar.cc/100?u=7" style="width:40px; height:40px; border-radius:50%;"
+                                alt="User">
+                            <div>
+                                <h4 style="font-size: 0.9rem;">Billing Department</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-secondary);">Offline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Main Area -->
+                <div class="chat-main">
+                    <div
+                        style="padding: 20px; border-bottom: 1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                        <h3>Team Lead Jessica</h3>
+                        <button style="color:var(--text-secondary);"><i class="ri-information-line"></i></button>
+                    </div>
+
+                    <div class="chat-body">
+                        <div class="message message-received">
+                            Hello Marcus! Just confirming that we've finished the deep cleaning of the boardroom and
+                            high-traffic common areas.
+                            <p style="font-size: 0.7rem; margin-top: 5px; opacity:0.6;">09:12 AM</p>
+                        </div>
+                        <div class="message message-received">
+                            I've also replaced the hand sanitizer terminals on Floor 3.
+                        </div>
+                        <div class="message message-sent">
+                            Thanks Jessica, much appreciated. The boardroom looks great. We have an executive meeting on
+                            Friday, so please ensure high-touch surfaces are prioritized on Thursday night as well.
+                            <p style="font-size: 0.7rem; margin-top: 5px; opacity:0.8; text-align:right;">11:45 AM</p>
+                        </div>
+                        <div class="message message-received">
+                            Acknowledged! We'll prioritize the executive suite and boardroom for Thursday night.
+                            <p style="font-size: 0.7rem; margin-top: 5px; opacity:0.6;">12:05 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <button style="color:var(--text-secondary); font-size: 1.5rem;"><i
+                                class="ri-attachment-line"></i></button>
+                        <input type="text" placeholder="Type your message..." class="chat-input">
+                        <button class="btn btn-secondary" style="padding: 10px 20px;"><i
+                                class="ri-send-plane-2-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/script.js"></script>
+    <style>
+        @media (max-width: 768px) {
+            .chat-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</body>
+
+</html>
