@@ -171,17 +171,29 @@
                 <h2>Frequently Asked</h2>
             </div>
             <div class="reveal" style="display: grid; gap: 15px;">
-                <div
-                    style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color); padding: 15px 25px;">
-                    <h4 style="margin-bottom: 5px;">Do you provide after-hours cleaning?</h4>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Yes, we offer 24/7 service schedules to
-                        minimize disruption to your workday.</p>
+                <div style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+                    <button onclick="this.parentElement.classList.toggle('faq-open')"
+                        style="width:100%; display:flex; justify-content:space-between; align-items:center; padding: 15px 25px; background:none; border:none; cursor:pointer; color:var(--text-primary); font-family:inherit; font-size:1rem; font-weight:600;">
+                        Do you provide after-hours?
+                        <span style="font-size:1.2rem; transition:transform 0.3s;" class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"
+                        style="max-height:0; overflow:hidden; transition:max-height 0.3s ease; padding: 0 25px;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; padding-bottom:15px;">Yes, we offer
+                            24/7 service schedules to minimize disruption to your workday.</p>
+                    </div>
                 </div>
-                <div
-                    style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color); padding: 15px 25px;">
-                    <h4 style="margin-bottom: 5px;">Are you fully insured?</h4>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Absolutely. We provide comprehensive
-                        liability insurance and workers' compensation coverage.</p>
+                <div style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+                    <button onclick="this.parentElement.classList.toggle('faq-open')"
+                        style="width:100%; display:flex; justify-content:space-between; align-items:center; padding: 15px 25px; background:none; border:none; cursor:pointer; color:var(--text-primary); font-family:inherit; font-size:1rem; font-weight:600;">
+                        Are you fully insured?
+                        <span style="font-size:1.2rem; transition:transform 0.3s;" class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"
+                        style="max-height:0; overflow:hidden; transition:max-height 0.3s ease; padding: 0 25px;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; padding-bottom:15px;">Absolutely. We
+                            provide comprehensive liability insurance and workers' compensation coverage.</p>
+                    </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 50px;" class="reveal">
@@ -190,6 +202,16 @@
             </div>
         </div>
     </section>
+
+    <style>
+        .faq-open .faq-answer {
+            max-height: 200px !important;
+        }
+
+        .faq-open .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
 
     <footer class="footer">
         <div class="container">
@@ -252,6 +274,10 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 </body>
 
 </html>

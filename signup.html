@@ -133,9 +133,7 @@
 
 <body data-theme="light">
 
-    <div class="theme-float">
-        <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
-    </div>
+
 
     <div class="login-card">
         <a href="index.html" class="logo" style="justify-content:center; margin-bottom: 40px; font-size: 2rem;">
@@ -145,17 +143,16 @@
         <p style="opacity:0.7; font-size: 0.9rem; margin-bottom: 30px;">Register here for premium care</p>
 
         <form action="dashboard.html">
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                <input type="text" placeholder="First Name" required class="login-input">
-                <input type="text" placeholder="Last Name" required class="login-input">
-            </div>
+            <input type="text" placeholder="First Name" required class="login-input">
+            <input type="text" placeholder="Last Name" required class="login-input">
             <input type="text" placeholder="Company Name" required class="login-input">
             <input type="email" placeholder="Corporate Email" required class="login-input">
             <input type="password" placeholder="Create Password" required class="login-input">
 
-            <p style="font-size: 0.75rem; opacity: 0.7; margin: 10px 0 25px; text-align: left;">
-                By clicking register, you agree to our Terms of Service & Privacy Policy.
-            </p>
+            <label style="display:flex; align-items:flex-start; gap: 8px; font-size: 0.75rem; opacity: 0.7; margin: 10px 0 25px; text-align: left; cursor: pointer;">
+                <input type="checkbox" required style="margin-top: 2px;">
+                <span>By clicking register, you agree to our Terms of Service & Privacy Policy.</span>
+            </label>
 
             <button type="submit" class="btn btn-primary"
                 style="width:100%; justify-content:center; padding: 18px; background-color: var(--secondary);">Create
@@ -184,6 +181,10 @@
     </div>
 
     <script src="assets/js/script.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 </body>
 
 </html>
