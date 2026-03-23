@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#0b1220"></rect>
+
+  <!-- Shield -->
+  <path d="M32 10 L50 18 V30 C50 42 42 50 32 54 C22 50 14 42 14 30 V18 Z" fill="#22c55e"></path>
+
+  <!-- Check mark -->
+  <path d="M24 32 L30 38 L40 26" fill="none" stroke="#dcfce7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

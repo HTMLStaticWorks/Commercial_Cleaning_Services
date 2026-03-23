@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
 </head>
 
 <body data-theme="light">
@@ -28,6 +30,7 @@
             </nav>
 
             <div class="sidebar-footer">
+                <button class="rtl-toggle menu-item" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 12px 16px; display: flex; align-items: center; gap: 12px; font-size: 1rem; color: var(--text-secondary);"><i class="ri-text-direction-r"></i> RTL Mode</button>
                 <a href="login.html" class="menu-item" style="color:#ef4444;"><i class="ri-logout-box-line"></i>
                     Logout</a>
             </div>
@@ -40,11 +43,12 @@
                     <button class="dash-hamburger" id="dash-toggle"><i class="ri-menu-2-line"></i></button>
                     <div>
                         <h1 style="font-size: 1.5rem;">Good morning, Marcus</h1>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Nexus Corp • HQ Facility Manager</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Nexus Corp â€¢ HQ Facility Manager</p>
                     </div>
                 </div>
 
                 <div class="user-profile">
+                    <button class="rtl-toggle theme-toggle d-none-mobile" style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><i class="ri-text-direction-r"></i></button>
                     <button id="theme-toggle" class="theme-toggle" style="width:36px; height:36px;"><i
                             class="ri-moon-line"></i></button>
                     <div style="text-align: right;" class="d-none-mobile">
@@ -149,10 +153,10 @@
                         <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Corporate XL</h2>
                         <ul
                             style="font-size: 0.85rem; margin-bottom: 20px; display:grid; gap: 10px; list-style: none; padding: 0;">
-                            <li>• Daily Night Cleaning</li>
-                            <li>• Bi-weekly Window Washing</li>
-                            <li>• Dedicated Team Lead</li>
-                            <li>• 24/7 Priority Support</li>
+                            <li>â€¢ Daily Night Cleaning</li>
+                            <li>â€¢ Bi-weekly Window Washing</li>
+                            <li>â€¢ Dedicated Team Lead</li>
+                            <li>â€¢ 24/7 Priority Support</li>
                         </ul>
                         <button class="btn btn-primary"
                             style="background:#fff; color:var(--primary-900); width:100%; justify-content:center; font-size: 0.8rem;">Upgrade
@@ -179,3 +183,5 @@
 </body>
 
 </html>
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,6 +9,8 @@
         content="Commercial cleaning services for corporate offices and retail businesses. Professional, reliable, and premium hygiene solutions for your workplace.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
 </head>
 
 <body data-theme="light">
@@ -20,14 +22,17 @@
                 <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="home2.html" class="nav-link">Home 2</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
             </ul>
             <div class="nav-actions">
+                <button class="rtl-toggle btn btn-outline d-none-mobile"
+                    style="padding: 8px 16px; border-color: var(--border-color);"><i class="ri-text-direction-r"></i>
+                    RTL</button>
                 <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
                 <a href="login.html" class="btn btn-primary d-none-mobile">Login</a>
                 <button class="hamburger"><i class="ri-menu-3-line"></i></button>
@@ -44,13 +49,15 @@
             <button id="close-drawer"><i class="ri-close-line" style="font-size:2rem;"></i></button>
         </div>
         <div class="mobile-links">
-            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link active">Home</a>
             <a href="home2.html" class="mobile-link">Home 2</a>
             <a href="services.html" class="mobile-link">Services</a>
             <a href="blog.html" class="mobile-link">Blog</a>
             <a href="contact.html" class="mobile-link">Contact</a>
             <a href="dashboard.html" class="mobile-link">Dashboard</a>
             <a href="login.html" class="btn btn-primary">Login</a>
+            <button class="rtl-toggle btn btn-outline" style="width:100%; justify-content:center; margin-top:15px;"><i
+                    class="ri-text-direction-r"></i> RTL</button>
         </div>
     </div>
     <!-- Mobile Drawer -->
@@ -63,11 +70,13 @@
             <button id="close-drawer"><i class="ri-close-line" style="font-size:2rem;"></i></button>
         </div>
         <div class="mobile-links">
-            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link active">Home</a>
             <a href="services.html" class="mobile-link">Services</a>
             <a href="blog.html" class="mobile-link">Our Blog</a>
             <a href="contact.html" class="mobile-link">Get a Quote</a>
             <a href="login.html" class="btn btn-primary">Client Login</a>
+            <button class="rtl-toggle btn btn-outline" style="width:100%; justify-content:center; margin-top:15px;"><i
+                    class="ri-text-direction-r"></i> RTL</button>
         </div>
     </div>
 
@@ -137,7 +146,7 @@
                         style="border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); width: 100%;">
                 </div>
                 <div class="reveal">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 24px;">The Gold Standard of <span
+                    <h2 style="font-size: 2.5rem; margin-bottom: 24px; text-align: center;">The Gold Standard of <span
                             style="color: var(--accent);">Corporate Reliability</span></h2>
                     <p style="color: var(--text-secondary); margin-bottom: 30px;">We don't just clean; we manage your
                         facility's health. Our staff undergoes intensive certified training to ensure every square inch

@@ -22,6 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // RTL Toggle Logic
+    const rtlToggles = document.querySelectorAll('.rtl-toggle');
+    const currentDir = localStorage.getItem('dir') || 'ltr';
+
+    const applyDir = (dir) => {
+        document.documentElement.setAttribute('dir', dir);
+        localStorage.setItem('dir', dir);
+        rtlToggles.forEach(toggle => {
+            const isDashOnly = toggle.classList.contains('theme-toggle');
+            if (isDashOnly) {
+                toggle.innerHTML = dir === 'rtl' ? '<i class="ri-text-direction-l"></i>' : '<i class="ri-text-direction-r"></i>';
+            } else if (toggle.classList.contains('menu-item')) {
+                 toggle.innerHTML = dir === 'rtl' ? '<i class="ri-text-direction-l"></i> LTR Mode' : '<i class="ri-text-direction-r"></i> RTL Mode';
+            } else {
+                toggle.innerHTML = dir === 'rtl' ? '<i class="ri-text-direction-l"></i> LTR' : '<i class="ri-text-direction-r"></i> RTL';
+            }
+        });
+    };
+
+    applyDir(currentDir);
+
+    rtlToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const newDir = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl';
+            applyDir(newDir);
+        });
+    });
+
     // Navbar Scroll Interaction
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {

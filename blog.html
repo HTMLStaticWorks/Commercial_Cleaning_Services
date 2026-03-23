@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,8 @@
     <title>Insights & Workplace Wellness | CleanEdge Pro</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
 </head>
 
 <body data-theme="light">
@@ -26,6 +28,7 @@
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
             </ul>
             <div class="nav-actions">
+                <button class="rtl-toggle btn btn-outline d-none-mobile" style="padding: 8px 16px; border-color: var(--border-color);"><i class="ri-text-direction-r"></i> RTL</button>
                 <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
                 <a href="login.html" class="btn btn-primary d-none-mobile">Login</a>
                 <button class="hamburger"><i class="ri-menu-3-line"></i></button>
@@ -45,10 +48,11 @@
             <a href="index.html" class="mobile-link">Home</a>
             <a href="home2.html" class="mobile-link">Home 2</a>
             <a href="services.html" class="mobile-link">Services</a>
-            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="blog.html" class="mobile-link active">Blog</a>
             <a href="contact.html" class="mobile-link">Contact</a>
             <a href="dashboard.html" class="mobile-link">Dashboard</a>
             <a href="login.html" class="btn btn-primary">Login</a>
+            <button class="rtl-toggle btn btn-outline" style="width:100%; justify-content:center; margin-top:15px;"><i class="ri-text-direction-r"></i> RTL</button>
         </div>
     </div>
     <!-- Search / Mobile Recent (Visible on top in mobile) -->
@@ -242,3 +246,5 @@
 </body>
 
 </html>
+
+

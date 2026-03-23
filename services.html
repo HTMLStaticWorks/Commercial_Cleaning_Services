@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,8 @@
     <title>Our Services | CleanEdge Pro</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
 </head>
 
 <body data-theme="light">
@@ -20,12 +22,15 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="home2.html" class="nav-link">Home 2</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
             </ul>
             <div class="nav-actions">
+                <button class="rtl-toggle btn btn-outline d-none-mobile"
+                    style="padding: 8px 16px; border-color: var(--border-color);"><i class="ri-text-direction-r"></i>
+                    RTL</button>
                 <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
                 <a href="login.html" class="btn btn-primary d-none-mobile">Login</a>
                 <button class="hamburger"><i class="ri-menu-3-line"></i></button>
@@ -44,11 +49,13 @@
         <div class="mobile-links">
             <a href="index.html" class="mobile-link">Home</a>
             <a href="home2.html" class="mobile-link">Home 2</a>
-            <a href="services.html" class="mobile-link">Services</a>
+            <a href="services.html" class="mobile-link active">Services</a>
             <a href="blog.html" class="mobile-link">Blog</a>
             <a href="contact.html" class="mobile-link">Contact</a>
             <a href="dashboard.html" class="mobile-link">Dashboard</a>
             <a href="login.html" class="btn btn-primary">Login</a>
+            <button class="rtl-toggle btn btn-outline" style="width:100%; justify-content:center; margin-top:15px;"><i
+                    class="ri-text-direction-r"></i> RTL</button>
         </div>
     </div>
     <!-- Services Banner -->
@@ -71,7 +78,7 @@
                         alt="Office Cleaning" style="width:100%; height:250px; object-fit:cover;">
                     <div
                         style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
-                        <h3 style="margin-bottom: 15px;">Corporate Office Cleaning</h3>
+                        <h3 style="margin-bottom: 15px; text-align: center;">Corporate Office Cleaning</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 20px;">Daily, nightly, or weekly
                             rotations desk sanitization, restroom hygiene, and kitchen area cleaning.</p>
                         <ul
@@ -92,7 +99,7 @@
                         alt="Retail" style="width:100%; height:250px; object-fit:cover;">
                     <div
                         style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
-                        <h3 style="margin-bottom: 15px;">Retail & Showroom Care</h3>
+                        <h3 style="margin-bottom: 15px; text-align: center;">Retail & Showroom Care</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 20px;">Protecting your brand image with
                             pristine glass, reflective floors, and spotless fitting environments.</p>
                         <ul
@@ -114,7 +121,7 @@
                         alt="Specialized" style="width:100%; height:250px; object-fit:cover;">
                     <div
                         style="padding: 30px; border: 1px solid var(--border-color); border-top:none; border-radius: 0 0 16px 16px;">
-                        <h3 style="margin-bottom: 15px;">Industrial & Deep Clean</h3>
+                        <h3 style="margin-bottom: 15px; text-align: center;">Industrial & Deep Clean</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 20px;">Specialized heavy-duty protocols
                             for warehouses, medical centers, and post-construction projects.</p>
                         <ul

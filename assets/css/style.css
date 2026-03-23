@@ -181,8 +181,8 @@ button {
     z-index: 1000;
     transition: var(--transition);
     padding: 20px 0;
-    border-bottom: 1px solid var(--glass-border);
-    background: var(--glass-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: #0f172a;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -230,8 +230,13 @@ button {
     transition: var(--transition);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.navbar .nav-link.active {
+    color: var(--secondary) !important;
 }
 
 .nav-actions {
@@ -254,6 +259,25 @@ button {
     /* ← change from #ffffff to this */
 }
 
+.navbar .nav-link,
+.navbar .logo {
+    color: #fff !important;
+}
+
+.navbar .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.navbar .rtl-toggle {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.navbar .hamburger {
+    color: #fff !important;
+}
 
 /* --- Cards --- */
 
@@ -397,6 +421,12 @@ button {
 .mobile-link {
     font-size: 1.2rem;
     font-weight: 600;
+    transition: var(--transition);
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+    color: var(--secondary);
 }
 
 .hamburger {
@@ -414,7 +444,7 @@ button {
     }
 
     .d-none-mobile {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -492,12 +522,12 @@ button {
     }
 
     .hero-grid>div:first-child {
-        order: 2;
+        order: 1;
         padding: 40px 24px !important;
     }
 
     .hero-grid>div:last-child {
-        order: 1;
+        order: 2;
         height: 300px;
     }
 
