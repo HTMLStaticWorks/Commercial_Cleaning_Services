@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <style>
         body {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-800) 100%);
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 40px 20px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
         }
 
         .login-card {
@@ -51,12 +59,12 @@
 
         .login-input {
             width: 100%;
-            padding: 18px;
-            border-radius: 12px;
+            padding: 10px;
+            border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.05);
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             outline: none;
         }
 
@@ -93,17 +101,18 @@
 
         .social-login-grid {
             display: flex;
-            gap: 15px;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .social-btn {
-            flex: 1;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 12px;
-            border-radius: 12px;
+            gap: 10px;
+            padding: 14px;
+            border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.05);
             color: #fff;
@@ -126,6 +135,58 @@
         [data-theme="light"] .social-btn:hover {
             background: #e2e8f0;
         }
+
+        .theme-float {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .theme-float .theme-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff !important;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .theme-float .theme-toggle i {
+            font-size: 1.2rem;
+            color: #fff !important;
+        }
+
+        .theme-float .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .theme-float .rtl-toggle {
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff !important;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .theme-float .rtl-toggle i {
+            color: #fff !important;
+        }
+
+        .theme-float .rtl-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
     </style>
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="shortcut icon" href="assets/images/favicon.svg">
@@ -135,26 +196,31 @@
 
 
 
+    <div class="theme-float">
+        <button class="rtl-toggle btn btn-outline"><i class="ri-text-direction-r"></i> RTL</button>
+        <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
+    </div>
+
     <div class="login-card">
         <a href="index.html" class="logo" style="justify-content:center; margin-bottom: 40px; font-size: 2rem;">
             <i class="ri-shield-flash-line"></i> Clean<span>Edge</span>
         </a>
-        <h2 style="margin-bottom: 10px;">Welcome Back</h2>
+        <h3 style="margin-bottom: 10px;">Welcome Back</h3>
 
         <form action="dashboard.html">
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 12px;">
                 <label
                     style="font-size: 0.8rem; font-weight: 600;text-align: left; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; display: block;">Full
                     Name</label>
                 <input type="text" placeholder="John Doe" required class="login-input">
             </div>
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 12px;">
                 <label
                     style="font-size: 0.8rem; font-weight: 600; text-align: left;text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; display: block;">Corporate
                     Email</label>
                 <input type="email" placeholder="j.doe@company.com" required class="login-input">
             </div>
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 12px;">
                 <label
                     style="font-size: 0.8rem; font-weight: 600;text-align: left; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; display: block;">Password</label>
                 <input type="password" placeholder="••••••••" required class="login-input">
@@ -162,13 +228,12 @@
 
             <div
                 style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px; font-size: 0.8rem;">
-                <label style="display:flex; align-items:center; gap: 8px;"><input type="checkbox"> Remember for 30
-                    days</label>
+                <label style="display:flex; align-items:center; gap: 8px;"><input type="checkbox"> Remember Me</label>
                 <a href="#" style="color: var(--secondary); font-weight: 700;">Forgot password?</a>
             </div>
 
             <button type="submit" class="btn btn-primary"
-                style="width:100%; justify-content:center; padding: 18px; background-color: var(--secondary);">Sign
+                style="width:100%; justify-content:center; padding: 14px; background-color: var(--secondary);">Sign
                 In</button>
         </form>
 
@@ -203,16 +268,13 @@
         </div>
 
         <p style="margin-top: 30px; font-size: 0.9rem; opacity:0.7;">
-            Don't have a corporate account? <a href="signup.html"
-                style="color: var(--secondary); font-weight: 700;">Join Us</a>
+            Don't have account? <a href="signup.html" style="color: var(--secondary); font-weight: 700;">Join Us</a>
         </p>
     </div>
 
     <script src="assets/js/script.js"></script>
     <!-- Back to Top -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="ri-arrow-up-line"></i>
-    </a>
+
 </body>
 
 </html>

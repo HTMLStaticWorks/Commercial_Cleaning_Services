@@ -135,77 +135,53 @@
                         style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; text-align: center; display: flex; flex-direction: column; gap: 30px; margin: 0 4px;">
                         <div>
                             <h3 style="margin-bottom: 24px;">Global Headquarters</h3>
-                            <div style="display:grid; gap: 24px;">
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+
+                            <!-- Wrapper with fixed width for alignment -->
+                            <div
+                                style="display: flex; flex-direction: column; gap: 24px; max-width: 360px; margin: 0 auto;">
+
+                                <div style="display: flex; gap: 20px; align-items: flex-start;">
                                     <div
                                         style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                         <i class="ri-map-pin-line"></i>
                                     </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;">Location</h4>
-                                        <p style="color: var(--text-secondary);">101 Corporate Plaza, 5th Avenue, New
-                                            York,
-                                            NY 10001</p>
+                                    <div style="text-align: left; flex: 1;">
+                                        <h4 style="font-size: 1rem; margin: 0 0 8px 0;">Location</h4>
+                                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                                            101 Corporate Plaza, 5th Avenue,<br>
+                                            New York, NY 10001
+                                        </p>
                                     </div>
                                 </div>
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+
+                                <div style="display: flex; gap: 20px; align-items: flex-start;">
                                     <div
                                         style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                         <i class="ri-phone-line"></i>
                                     </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;">Direct Sales</h4>
-                                        <p style="color: var(--text-secondary);">+1 (8005555) 253-2677 77| Mon-Fri, 9am
-                                            -
-                                            6pm EST</p>
+                                    <div style="text-align: left; flex: 1;">
+                                        <h4 style="font-size: 1rem; margin: 0 0 8px 0;">Direct Sales</h4>
+                                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                                            +1 (800) 555-2677<br>
+                                            Mon-Fri, 9am - 6pm EST
+                                        </p>
                                     </div>
                                 </div>
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+
+                                <div style="display: flex; gap: 20px; align-items: flex-start;">
                                     <div
                                         style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                         <i class="ri-mail-line"></i>
                                     </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;">Inquiries</h4>
-                                        <p style="color: var(--text-secondary);">proposals@cleanedge.pro |
-                                            support@cleanedge.pro</p>
+                                    <div style="text-align: left; flex: 1;">
+                                        <h4 style="font-size: 1rem; margin: 0 0 8px 0;">Inquiries</h4>
+                                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                                            proposals@cleanedge.pro<br>
+                                            support@cleanedge.pro
+                                        </p>
                                     </div>
                                 </div>
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                    <div
-                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                        <i class="ri-map-pin-line"></i>
-                                    </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;"> Other branch Location</h4>
-                                        <p style="color: var(--text-secondary);">101 Corporate Plaza, 5th Avenue, New
-                                            York,
-                                            NY 10001</p>
-                                    </div>
-                                </div>
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                    <div
-                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                        <i class="ri-phone-line"></i>
-                                    </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;">Sales Admin</h4>
-                                        <p style="color: var(--text-secondary);">+1 (8005234) 253-2677 77| Mon-Fri, 9am
-                                            -
-                                            6pm EST</p>
-                                    </div>
-                                </div>
-                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                    <div
-                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                        <i class="ri-mail-line"></i>
-                                    </div>
-                                    <div style="text-align: left;">
-                                        <h4 style="font-size: 1rem;">Contact Us</h4>
-                                        <p style="color: var(--text-secondary);">proposals@cleanedge.pro |
-                                            support@cleanedge.pro</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
@@ -225,7 +201,6 @@
                                         class="ri-twitter-fill"></i></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
