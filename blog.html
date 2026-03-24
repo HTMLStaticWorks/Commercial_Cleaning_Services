@@ -78,96 +78,153 @@
 
     <!-- Main Blog Feed -->
     <section class="section">
-        <div class="container blog-layout" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+        <div class="container blog-layout" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+
             <!-- Blog Posts -->
-            <div style="display: grid; gap: 40px;">
+            <div class="blog-grid" style="display: contents;">
                 <!-- Post 1 -->
-                <div class="card reveal"
-                    style="padding: 0; display: grid; grid-template-columns: 1fr 2fr; border:none; background:none;">
+                <div class="card reveal blog-card" style="text-align: center;">
                     <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800"
-                        alt="Blog" style="width:100%; height:100%; object-fit:cover; border-radius: 16px;">
-                    <div style="padding: 30px;">
-                        <span
-                            style="color: var(--secondary); font-weight:700; font-size: 0.8rem; text-transform:uppercase;">Hygiene
-                            Standards</span>
-                        <h2 style="font-size: 1.8rem; margin: 15px 0;">Maintaining Wellness in Open Plan Offices</h2>
-                        <p style="color: var(--text-secondary); margin-bottom: 25px;">Why professional cleaning services
-                            reduce employee sick days by up to 28% and boost morale through meticulous hygiene
-                            management.</p>
-                        <a href="#" class="btn btn-outline">Read Full Article</a>
-                    </div>
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Hygiene
+                        Standards</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Maintaining Wellness in Open Plan Offices</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Why professional cleaning services employee sick days by 28% and boost morale
+                        through hygiene management.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
                 </div>
 
                 <!-- Post 2 -->
-                <div class="card reveal"
-                    style="padding: 0; display: grid; grid-template-columns: 1fr 2fr; border:none; background:none;">
+                <div class="card reveal blog-card" style="text-align: center;">
                     <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
-                        alt="Blog" style="width:100%; height:100%; object-fit:cover; border-radius: 16px;">
-                    <div style="padding: 30px;">
-                        <span
-                            style="color: var(--secondary); font-weight:700; font-size: 0.8rem; text-transform:uppercase;">Cleaning
-                            Tips</span>
-                        <h2 style="font-size: 1.8rem; margin: 15px 0;">Choosing Between Eco-Friendly & Industrial
-                            Chemicals</h2>
-                        <p style="color: var(--text-secondary); margin-bottom: 25px;">A comprehensive look at why the
-                            CleanEdge approach prioritizes green solutions without compromising sanitization strength.
-                        </p>
-                        <a href="#" class="btn btn-outline">Read Full Article</a>
-                    </div>
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Cleaning
+                        Tips</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Eco-Friendly Things vs Industrial Chemicals</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        A comprehensive look at why the CleanEdge approach prioritizes green solutions without
+                        compromising.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
                 </div>
 
                 <!-- Post 3 -->
-                <div class="card reveal"
-                    style="padding: 0; display: grid; grid-template-columns: 1fr 2fr; border:none; background:none;">
+                <div class="card reveal blog-card" style="text-align: center;">
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-                        alt="Blog" style="width:100%; height:100%; object-fit:cover; border-radius: 16px;">
-                    <div style="padding: 30px;">
-                        <span
-                            style="color: var(--secondary); font-weight:700; font-size: 0.8rem; text-transform:uppercase;">Facility
-                            Management</span>
-                        <h2 style="font-size: 1.8rem; margin: 15px 0;">Post-Pandemic Cleaning: High Frequency
-                            touchpoints</h2>
-                        <p style="color: var(--text-secondary); margin-bottom: 25px;">Identifying and managing the
-                            common areas that require 2x sanitization daily, including elevator buttons and water
-                            coolers.</p>
-                        <a href="#" class="btn btn-outline">Read Full Article</a>
-                    </div>
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Facility
+                        Management</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Post-Pandemic High Frequency Touchpoints</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Identifying common areas requiring 2x daily sanitization, including elevator buttons, door
+                        handles, and water coolers.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Office
+                        Design</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Creating Clean Zones in Modern Workspaces</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Strategic placement of sanitization stations and zone management for maximized
+                        workplace and clean hygiene.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Industry
+                        Insights</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">The ROI of Professional Cleaning Services</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        How investing in commercial cleaning reduces operational costs and improves employee retention
+                        by 15%.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Technology</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Smart Cleaning: IoT Sensors & Automation</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Exploring how modern technology is revolutionizing facility management and creating data-driven
+                        cleaning schedules.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 7 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Best
+                        Practices</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Deep Cleaning vs Regular Maintenance</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Understanding when to schedule deep cleans versus daily maintenance routines for optimal
+                        facility managemnet health.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 8 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Sustainability</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Zero Waste Neat Cleaning Programs</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        How forward-thinking companies are implementing sustainable cleaning practices to reduce
+                        environmental impact.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+
+                <!-- Post 9 -->
+                <div class="card reveal blog-card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+                        alt="Blog"
+                        style="width:100%; height:220px; object-fit:cover; border-radius: 16px 16px 0 0; margin: -30px -30px 20px -30px;">
+                    <span
+                        style="color: var(--secondary); font-weight:700; font-size: 0.75rem; text-transform:uppercase; display:block; margin-bottom:12px;">Training</span>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Certifying Your In-House Cleaning Team</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        Essential training programs and certifications that elevate your facility management team to
+                        industry standards.
+                    </p>
+                    <a href="#" class="btn btn-outline">Read More</a>
                 </div>
             </div>
 
-            <!-- Sidebar (Desktop View) -->
-            <aside class="reveal blog-sidebar">
-                <div class="card" style="margin-bottom: 30px;">
-                    <h3 style="text-align: center;">Newsletter</h3>
-                    <p style="font-size: 0.9rem;font-weight: 600; color: var(--text-secondary); margin: 15px 0;">Join
-                        2000+ facility
-                        managers for weekly hygiene updates.</p>
-                    <input type="email" placeholder="Email address"
-                        style="width:100%; margin-bottom: 15px; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); outline:none;">
-                    <button class="btn btn-secondary" style="width:100%;">Subscribe Now</button>
-                </div>
 
-                <div class="card">
-                    <h3 style="text-align: center;">Recent Articles</h3>
-                    <ul style="margin-top: 20px; display: grid; gap: 20px;">
-                        <li>
-                            <a href="#" style="font-size: 0.95rem; font-weight: 600;">The ultimate floor polishing
-                                guide</a>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary);">March 10, 2026</p>
-                        </li>
-                        <li>
-                            <a href="#" style="font-size: 0.95rem; font-weight: 600;">Medical Center Grade
-                                Sanitation</a>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary);">March 05, 2026</p>
-                        </li>
-                        <li>
-                            <a href="#" style="font-size: 0.95rem; font-weight: 600;">Industrial deep clean
-                                requirements</a>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary);">Feb 28, 2026</p>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
         </div>
     </section>
 

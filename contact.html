@@ -71,138 +71,139 @@
 
     <!-- Contact Main -->
     <section class="section">
-        <div class="container contact-layout"
-            style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start;">
-            <!-- Contact Form -->
-            <div class="reveal">
-                <div class="card" style="padding: 40px; border-radius: 20px;">
-                    <h3 style="margin-bottom: 30px;text-align: center;">Request a Custom Proposal</h3>
-                    <form id="contact-form" style="display:grid; gap: 20px;">
-                        <div style="display:grid; grid-template-columns: 1fr; gap: 20px;">
+        <div class="container">
+            <div class="contact-layout"
+                style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start;">
+                <!-- Contact Form -->
+                <div class="reveal">
+                    <div class="card" style="padding: 40px; border-radius: 20px; margin: 0 4px;">
+                        <h3 style="margin-bottom: 30px;text-align: center;">Request a Custom Proposal</h3>
+                        <form id="contact-form" style="display:grid; gap: 20px;">
+                            <div style="display:grid; grid-template-columns: 1fr; gap: 20px;">
+                                <div>
+                                    <label
+                                        style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Full
+                                        Name</label>
+                                    <input type="text" required placeholder="John Doe"
+                                        style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                                </div>
+                                <div>
+                                    <label
+                                        style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Company
+                                        Name</label>
+                                    <input type="text" required placeholder="Acme Inc"
+                                        style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                                </div>
+                            </div>
                             <div>
                                 <label
-                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Full
-                                    Name</label>
-                                <input type="text" required placeholder="John Doe"
+                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Service
+                                    Needed</label>
+                                <select
+                                    style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                                    <option>Corporate Office Cleaning</option>
+                                    <option>Retail & Showroom Care</option>
+                                    <option>Industrial Specialization</option>
+                                    <option>Deep Clean Audit</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label
+                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Official
+                                    Email</label>
+                                <input type="email" required placeholder="j.doe@company.com"
                                     style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
                             </div>
                             <div>
                                 <label
-                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Company
-                                    Name</label>
-                                <input type="text" required placeholder="Acme Inc"
-                                    style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
+                                    style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Your
+                                    Message</label>
+                                <textarea rows="5"
+                                    placeholder="Tell us about your facility size and specific requirements..."
+                                    style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none; font-family:inherit;"></textarea>
+                            </div>
+                            <button class="btn btn-primary"
+                                style="padding: 18px; width:100%; justify-content:center;">Submit Proposal Request <i
+                                    class="ri-send-plane-fill"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="reveal">
+                    <div
+                        style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; text-align: center; display: flex; flex-direction: column; gap: 30px; margin: 0 4px;">
+                        <div>
+                            <h3 style="margin-bottom: 24px;">Global Headquarters</h3>
+                            <div style="display:grid; gap: 24px;">
+                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                                    <div
+                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                        <i class="ri-map-pin-line"></i>
+                                    </div>
+                                    <div style="text-align: left;">
+                                        <h4 style="font-size: 1rem;">Location</h4>
+                                        <p style="color: var(--text-secondary);">101 Corporate Plaza, 5th Avenue, New
+                                            York,
+                                            NY 10001</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                                    <div
+                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                        <i class="ri-phone-line"></i>
+                                    </div>
+                                    <div style="text-align: left;">
+                                        <h4 style="font-size: 1rem;">Direct Sales</h4>
+                                        <p style="color: var(--text-secondary);">+1 (8005555) 253-2677 77| Mon-Fri, 9am
+                                            -
+                                            6pm EST</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
+                                    <div
+                                        style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                        <i class="ri-mail-line"></i>
+                                    </div>
+                                    <div style="text-align: left;">
+                                        <h4 style="font-size: 1rem;">Inquiries</h4>
+                                        <p style="color: var(--text-secondary);">proposals@cleanedge.pro |
+                                            support@cleanedge.pro</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <label
-                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Service
-                                Needed</label>
-                            <select
-                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
-                                <option>Corporate Office Cleaning</option>
-                                <option>Retail & Showroom Care</option>
-                                <option>Industrial Specialization</option>
-                                <option>Deep Clean Audit</option>
-                            </select>
+
+                        <div style="border-top: 1px solid var(--border-color); padding-top: 30px;">
+                            <h4
+                                style="margin-bottom: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-secondary);">
+                                Follow Us</h4>
+                            <div style="display:flex; gap: 15px; justify-content: center;">
+                                <a href="#" class="social-icon"
+                                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                                        class="ri-linkedin-box-fill"></i></a>
+                                <a href="#" class="social-icon"
+                                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                                        class="ri-facebook-box-fill"></i></a>
+                                <a href="#" class="social-icon"
+                                    style="border-color: var(--border-color); color: var(--text-secondary);"><i
+                                        class="ri-twitter-fill"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <label
-                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Official
-                                Email</label>
-                            <input type="email" required placeholder="j.doe@company.com"
-                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none;">
-                        </div>
-                        <div>
-                            <label
-                                style="font-size: 0.8rem; font-weight: 600; text-transform:uppercase; color: var(--text-secondary); margin-bottom: 8px; display:block;">Your
-                                Message</label>
-                            <textarea rows="5"
-                                placeholder="Tell us about your facility size and specific requirements..."
-                                style="width:100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; outline:none; font-family:inherit;"></textarea>
-                        </div>
-                        <button class="btn btn-primary"
-                            style="padding: 18px; width:100%; justify-content:center;">Submit Proposal Request <i
-                                class="ri-send-plane-fill"></i></button>
-                    </form>
+
+                    </div>
                 </div>
             </div>
-
-            <!-- Contact Details -->
-            <div class="reveal">
-                <div
-                    style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; text-align: center; display: flex; flex-direction: column; gap: 30px;">
-
-                    <div>
-                        <h3 style="margin-bottom: 24px;">Global Headquarters</h3>
-                        <div style="display:grid; gap: 24px;">
-                            <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                <div
-                                    style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                    <i class="ri-map-pin-line"></i>
-                                </div>
-                                <div style="text-align: left;">
-                                    <h4 style="font-size: 1rem;">Location</h4>
-                                    <p style="color: var(--text-secondary);">101 Corporate Plaza, 5th Avenue, New York,
-                                        NY 10001</p>
-                                </div>
-                            </div>
-                            <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                <div
-                                    style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                    <i class="ri-phone-line"></i>
-                                </div>
-                                <div style="text-align: left;">
-                                    <h4 style="font-size: 1rem;">Direct Sales</h4>
-                                    <p style="color: var(--text-secondary);">+1 (8005555) 253-2677 77| Mon-Fri, 9am -
-                                        6pm EST</p>
-                                </div>
-                            </div>
-                            <div style="display:flex; gap: 20px; align-items: center; justify-content: center;">
-                                <div
-                                    style="background: var(--secondary); color:#fff; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                    <i class="ri-mail-line"></i>
-                                </div>
-                                <div style="text-align: left;">
-                                    <h4 style="font-size: 1rem;">Inquiries</h4>
-                                    <p style="color: var(--text-secondary);">proposals@cleanedge.pro |
-                                        support@cleanedge.pro</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="border-top: 1px solid var(--border-color); padding-top: 30px;">
-                        <h4
-                            style="margin-bottom: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-secondary);">
-                            Follow Us</h4>
-                        <div style="display:flex; gap: 15px; justify-content: center;">
-                            <a href="#" class="social-icon"
-                                style="border-color: var(--border-color); color: var(--text-secondary);"><i
-                                    class="ri-linkedin-box-fill"></i></a>
-                            <a href="#" class="social-icon"
-                                style="border-color: var(--border-color); color: var(--text-secondary);"><i
-                                    class="ri-facebook-box-fill"></i></a>
-                            <a href="#" class="social-icon"
-                                style="border-color: var(--border-color); color: var(--text-secondary);"><i
-                                    class="ri-twitter-fill"></i></a>
-                        </div>
-                    </div>
-
-                </div>
+            <!-- Map Placeholder -->
+            <div style="border-radius: 20px; overflow:hidden; height: 350px; margin-top: 20px; margin: 20px 20px 0 20px;"
+                class="reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.71277937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sWall%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+                    width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-
         </div>
-        <!-- Map Placeholder -->
-        <div style="border-radius: 20px; overflow:hidden; height: 350px; margin-top: 20px; margin: 20px 20px 0 20px;"
-            class="reveal">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.71277937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sWall%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
-                width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
     </section>
 
     <footer class="footer">
@@ -267,9 +268,31 @@
     <script src="assets/js/script.js"></script>
     <style>
         @media (max-width: 768px) {
-            .section[style*="grid-template-columns: 1fr 1fr"] {
+            .section {
+                overflow-x: hidden !important;
+            }
+
+            .contact-layout {
                 grid-template-columns: 1fr !important;
-                gap: 40px !important;
+                gap: 30px !important;
+            }
+
+            .container {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .contact-layout .card {
+                padding: 24px !important;
+            }
+
+            section[style*="padding-top:160px"] {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            section[style*="padding-top:160px"] h1 {
+                font-size: 2rem !important;
             }
         }
     </style>

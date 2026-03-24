@@ -565,21 +565,21 @@ button {
 
 /* Blog Layout */
 /* Blog Layout */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .blog-layout {
-        grid-template-columns: 2fr 1fr !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .blog-layout {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
 @media (max-width: 768px) {
     .blog-layout {
         grid-template-columns: 1fr !important;
-    }
-
-    .blog-sidebar {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 20px !important;
     }
 
     .blog-header {
@@ -592,22 +592,58 @@ button {
         width: 100% !important;
     }
 
-    .blog-layout .card[style*="grid-template-columns: 1fr 2fr"] {
-        grid-template-columns: 1fr !important;
-        display: flex !important;
-        flex-direction: column;
+    .blog-card img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-card img {
+        height: 200px !important;
+        margin: 0 0 20px 0 !important;
+        border-radius: 16px 16px 0 0 !important;
     }
 
-    .blog-layout .card img {
-        height: 200px !important;
-        width: 100% !important;
-        border-radius: 16px 16px 0 0 !important;
+    .blog-card {
+        padding: 0 !important;
     }
 }
 
 @media (max-width: 480px) {
-    .blog-sidebar {
-        grid-template-columns: 1fr !important;
+    .blog-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .blog-card p {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .blog-layout {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .blog-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .blog-card {
+        padding-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-card {
+        padding-bottom: 24px !important;
+    }
+
+    .blog-card .btn {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -620,10 +656,38 @@ button {
     .contact-layout {
         grid-template-columns: 1fr !important;
         gap: 40px !important;
+        display: grid !important;
     }
 
     .contact-layout .card {
         padding: 24px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        display: grid !important;
+        padding: 0 !important;
+    }
+
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .contact-layout .card,
+    .contact-layout>div>div[style*="background"] {
+        padding: 24px !important;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-layout[style] {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
     }
 }
 
