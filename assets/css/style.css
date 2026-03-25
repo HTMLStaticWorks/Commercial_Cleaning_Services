@@ -196,11 +196,12 @@ button {
 
 .logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-weight: 800;
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--secondary) !important;
 }
 
 .logo span {
@@ -261,7 +262,7 @@ button {
 
 .navbar .nav-link,
 .navbar .logo {
-    color: #fff !important;
+    color: var(--secondary) !important;
 }
 
 .navbar .theme-toggle {
@@ -315,9 +316,9 @@ button {
 }
 
 .footer-logo {
-    color: #fff;
+    color: var(--secondary) !important;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-weight: 800;
     margin-bottom: 20px;
     display: flex;
