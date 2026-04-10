@@ -6,6 +6,7 @@
     --primary-800: #1e293b;
     --primary-700: #334155;
     --secondary: #10b981;
+    --secondary-rgb: 16, 185, 129;
     /* Emerald */
     --accent: #a8925f;
     /* Brass/Gold */
@@ -180,9 +181,9 @@ button {
     width: 100%;
     z-index: 1000;
     transition: var(--transition);
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background: #0f172a;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -215,9 +216,10 @@ button {
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-primary);
     position: relative;
+    font-size: 0.95rem;
 }
 
 .nav-link::after {
@@ -260,24 +262,59 @@ button {
     /* ← change from #ffffff to this */
 }
 
-.navbar .nav-link,
-.navbar .logo {
-    color: var(--secondary) !important;
+.navbar .theme-toggle {
+    background: rgba(var(--secondary-rgb), 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
 }
 
-.navbar .theme-toggle {
+[data-theme="dark"] .navbar .theme-toggle {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
 }
 
 .navbar .rtl-toggle {
-    border-color: rgba(255, 255, 255, 0.2) !important;
-    color: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+}
+
+.navbar .btn-secondary {
+    padding: 10px 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: none;
 }
 
 .navbar .hamburger {
-    color: #fff !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .navbar {
+    background: #000000;
+}
+
+[data-theme="dark"] .navbar .nav-link {
+    color: #ffffff;
+}
+
+[data-theme="light"] .navbar {
+    background: #ffffff;
+}
+
+[data-theme="light"] .navbar .nav-link {
+    color: #000000;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary);
+}
+
+.navbar .nav-link.active {
+    color: var(--secondary) !important;
 }
 
 /* --- Cards --- */
