@@ -188,6 +188,16 @@
         .theme-float .rtl-toggle:hover {
             background: rgba(255, 255, 255, 0.2);
         }
+
+        @media (max-width: 400px) {
+            .login-card {
+                padding: 30px 20px;
+            }
+            .auth-links {
+                font-size: 0.75rem !important;
+                white-space: nowrap;
+            }
+        }
     </style>
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="shortcut icon" href="assets/images/favicon.svg">
@@ -227,9 +237,9 @@
                 <input type="password" placeholder="••••••••" required class="login-input">
             </div>
 
-            <div
-                style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px; font-size: 0.8rem;">
-                <label style="display:flex; align-items:center; gap: 8px;"><input type="checkbox"> Remember Me</label>
+            <div class="auth-links"
+                style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px; font-size: 0.8rem; gap: 5px;">
+                <label style="display:flex; align-items:center; gap: 4px; cursor: pointer;"><input type="checkbox"> Remember Me</label>
                 <a href="#" style="color: var(--secondary); font-weight: 700;">Forgot password?</a>
             </div>
 
