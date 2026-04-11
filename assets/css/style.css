@@ -317,6 +317,22 @@ button {
     color: var(--secondary) !important;
 }
 
+@media (min-width: 1024px) {
+    .navbar .nav-actions .rtl-toggle,
+    .navbar .nav-actions #theme-toggle,
+    .navbar .nav-actions .btn-secondary {
+        height: 42px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar .nav-actions #theme-toggle {
+        width: 42px !important;
+    }
+}
+
 /* --- Cards --- */
 
 .card {
